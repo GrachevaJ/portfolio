@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Юлия Грачева — Frontend Developer</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container">
+			<a href="#" class="logo">
+				<img src="images/GrachevaJ.svg" alt="Логотип" />
+			</a>
+			<nav class="nav">
+				<a href="#about">Обо мне</a>
+				<a href="#skills">Навыки</a>
+				<a href="#projects">Проекты</a>
+				<a href="#contact">Контакты</a>
+			</nav>
+		</div>
+	</header>
+
+	<section class="hero" id="hero">
+		<div class="container">
+			<h1>Привет, я <span class="accent">Юлия Грачева</span></h1>
+			<p>Frontend Developer</p>
+			<a href="#projects" class="btn">Смотреть проекты</a>
+		</div>
+	</section>
+
+	<section id="about" class="section">
+		<div class="container">
+			<h2>Обо мне</h2>
+			<p>Frontend-разработчик с практическим опытом создания SPA-приложений на React / TypeScript и адаптивной кроссбраузерной вёрстки. Умею проектировать архитектуру клиентских приложений (Redux Toolkit, паттерн MVP), работать с REST API, настраивать сложную валидацию форм и интегрировать интерактивные карты.
+				В разработке придерживаюсь строгих стандартов качества кода (ESLint, БЭМ, семантика, покрытие тестами на Jest / React Testing Library).</p>
+		</div>
+	</section>
+
+	<section id="skills" class="section">
+		<div class="container">
+			<h2>Навыки</h2>
+			<div class="skills-grid">
+				<div class="skill-card">
+					<h3 class="skill-card__title">Frontend &amp; State</h3>
+					<ul class="skill-card__list">
+						<li class="skill-card__item">JavaScript (ES6+)</li>
+						<li class="skill-card__item">TypeScript</li>
+						<li class="skill-card__item">React</li>
+						<li class="skill-card__item">Redux Toolkit</li>
+					</ul>
+				</div>
+
+				<div class="skill-card">
+					<h3 class="skill-card__title">Вёрстка и стили</h3>
+					<ul class="skill-card__list">
+						<li class="skill-card__item">HTML5 / CSS3</li>
+						<li class="skill-card__item">Sass (SCSS)</li>
+						<li class="skill-card__item">БЭМ</li>
+						<li class="skill-card__item">Адаптивная вёрстка</li>
+					</ul>
+				</div>
+
+				<div class="skill-card">
+					<h3 class="skill-card__title">Архитектура, API и тесты</h3>
+					<ul class="skill-card__list">
+						<li class="skill-card__item">ООП</li>
+						<li class="skill-card__item">REST API</li>
+						<li class="skill-card__item">Axios</li>
+						<li class="skill-card__item">Jest</li>
+					</ul>
+				</div>
+
+				<div class="skill-card">
+					<h3 class="skill-card__title">Инструменты и библиотеки</h3>
+					<ul class="skill-card__list">
+						<li class="skill-card__item">Git</li>
+						<li class="skill-card__item">Webpack</li>
+						<li class="skill-card__item">Gulp</li>
+						<li class="skill-card__item">AI</li>
+					</ul>
+				</div>
+			</div>
+	</section>
+
+	<section id="projects" class="section">
+		<div class="container">
+			<h2>Проекты</h2>
+			<div class="projects-grid">
+				<div class="project-card">
+					<img src="images/berry.png" alt="Скриншот главной страницы Berry" />
+					<h3>Berry</h3>
+					<p>Адаптивный интернет-магазин на HTML5, Sass и БЭМ. Реализована вёрстка под 3 разрешения с ретинизацией графики (WebP, SVG-спрайты), прогрессивное мобильное меню на JavaScript (работающее и без JS), интерактивная карта и автоматизация сборки через Gulp.</p>
+					<div class="project-links">
+						<a href="https://grachevaj.github.io/crypto-stars" class="btn-small">Сайт</a>
+						<a href="https://github.com/GrachevaJ/crypto-stars" class="btn-small">GitHub</a>
+					</div>
+				</div>
+				<div class="project-card">
+					<img src="images/crypto-stars.png" alt="Скриншот главной страницы Cryptostars" />
+					<h3>Cryptostars</h3>
+					<p>SPA-сервис для P2P-обмена криптовалюты. Реализована работа с REST API, сквозная фильтрация контрагентов, отображение точек наличного обмена на карте (Leaflet), двусторонний конвертер валют и кастомная валидация форм (Pristine) с учётом лимитов и балансов.</p>
+					<div class="project-links">
+						<a href="https://grachevaj.github.io/crypto-stars" class="btn-small">Сайт</a>
+						<a href="https://github.com/GrachevaJ/crypto-stars" class="btn-small">GitHub</a>
+					</div>
+				</div>
+				<div class="project-card">
+					<img src="images/big-trip.png" alt="Скриншот главной страницы Big Trip" />
+					<h3>Big Trip</h3>
+					<p>SPA-планировщик маршрутов на нативном JavaScript (архитектура MVP). Реализован полный цикл работы с данными через REST API (CRUD), динамическая сортировка и фильтрация точек маршрута, интеграция календарей (Flatpickr) и автоматический расчёт стоимости и тайминга поездки.</p>
+					<div class="project-links">
+						<a href="https://grachevaj.github.io/big-trip" class="btn-small">Сайт</a>
+						<a href="https://github.com/GrachevaJ/big-trip" class="btn-small">GitHub</a>
+					</div>
+				</div>
+				<div class="project-card">
+					<img src="images/escape-room.png" alt="Скриншот главной страницы Escape room" />
+					<h3>Escape Room</h3>
+					<p>Веб-приложение для бронирования квестов на React и TypeScript. Реализованы многоуровневая фильтрация каталога, управление состоянием через Redux Toolkit, приватный роутинг с авторизацией по токену, валидация форм (React Hook Form) и выбор локаций на интерактивной карте Leaflet.</p>
+					<div class="project-links">
+						<a href="https://grachevaj.github.io/escape-room" class="btn-small">Сайт</a>
+						<a href="https://github.com/GrachevaJ/escape-room" class="btn-small">GitHub</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact" class="section">
+		<div class="container">
+			<h2>Контакты</h2>
+			<div class="contact-links">
+				<a href="mailto:gra.che.va@yandex.ru" class="btn">Email</a>
+				<a href="https://t.me/gra_che_va" class="btn">Telegram</a>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<p>&copy; 2026 Юлия Грачева</p>
+		</div>
+	</footer>
+
+	<script src="js/three.r134.min.js"></script>
+	<script src="js/vanta.net.min.js"></script>
+	<script src="js/main.js" defer></script>
+</body>
+
+</html>
